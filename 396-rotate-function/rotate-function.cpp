@@ -10,7 +10,7 @@ public:
         }
         long ans=val;
         for(int li = n ;li >=0 ;li--){
-            val = val - (nums[li]*(n)) + (sum - nums[li]);
+            val = val + sum - (nums[li]*(n+1));  
             ans = max(val,ans); 
         }
         return (int)ans;
