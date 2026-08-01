@@ -6,11 +6,11 @@ public:
         long  val = 0;
         for(int i = 0 ; i<=n ; i++){
             sum+=nums[i];
-            val+=nums[i]*i;
+            val+=1LL * nums[i]*i;
         }
         long ans=val;
         for(int li = n ;li >=0 ;li--){
-            val = val + sum - (nums[li]*(n+1));  
+            val = val + sum - 1LL*(nums[li]*(n+1));  
             ans = max(val,ans); 
         }
         return (int)ans;
