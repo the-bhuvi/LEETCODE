@@ -1,6 +1,8 @@
 class Solution {
 public:
     int nearestExit(vector<vector<char>>& maze, vector<int>& entrance) {
+        ios::sync_with_stdio(false);
+	    cin.tie(nullptr);
         int diff[5] = {0, -1, 0, 1, 0};
         int R = maze.size(), C = maze[0].size();
         queue<pair<int, int>> q;
