@@ -1,6 +1,8 @@
 class Solution {
 public:
     long long maxAlternatingSum(vector<int>& nums) {
+        ios :: sync_with_stdio(false);
+        cin.tie(nullptr);
         int n = nums.size();
         long long tot = 0;
         for(int &x : nums){
