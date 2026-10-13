@@ -6,15 +6,17 @@ public:
         int n = nums.size();
         long long tot = 0;
         for(int &x : nums){
-            x = (x*x);
-            tot += 1LL*x;     
+            x = (x*x);     
         }
         //cout << tot << endl;
         sort(nums.begin(),nums.end());
-        
-        for(int i = 0;i< n/2 ;i++){
-            tot -= 1LL*2*nums[i];
+        int i;
+        for( i = 0;i< n/2 ;i++){
+            tot -= 1LL*nums[i];
             cout << tot << endl;
+        }
+        for(;i < n;i++){
+            tot += 1LL*nums[i];
         }
          return tot;
     }
